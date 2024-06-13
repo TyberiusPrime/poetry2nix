@@ -4021,6 +4021,14 @@ lib.composeManyExtensions [
       y-py = prev.y-py.override {
         preferWheel = true;
       };
+
+      vbuild = prev.vbuild.overridePythonAttrs
+      (old: { 
+        buildInputs = old.buildInputs or [ ] ++ [ final.poetry-core ]; 
+        postPatch = ''
+          substituteInPlace pyproject.toml --replace "poetry.masonry" "poetry.core.masonry"
+        '';
+    });
     }
   )
   # The following are dependencies of torch >= 2.0.0.

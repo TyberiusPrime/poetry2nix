@@ -13892,6 +13892,9 @@
   "nicegui": [
     "poetry-core"
   ],
+  "nicegui-highcharts": [
+    "poetry-core"
+  ],
   "niko-home-control": [
     "setuptools"
   ],
@@ -19296,6 +19299,9 @@
   "pytest-select": [
     "poetry"
   ],
+  "pytest-selenium": [
+    "hatchling", "hatch-vcs"
+  ],
   "pytest-server-fixtures": [
     "setuptools"
   ],
@@ -19369,6 +19375,9 @@
   ],
   "pytest-unordered": [
     "setuptools"
+  ],
+  "pytest-variables": [
+    "hatch-vcs"
   ],
   "pytest-vcr": [
     "setuptools"
