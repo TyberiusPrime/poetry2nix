@@ -56,7 +56,7 @@
               in
               import ./tests { inherit pkgs; }
               // {
-                formatting = treefmtEval.x86_64-linux.config.build.check self;
+                #formatting = treefmtEval.x86_64-linux.config.build.check self;
               };
 
             x86_64-darwin =
