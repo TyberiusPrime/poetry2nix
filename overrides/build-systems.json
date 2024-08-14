@@ -2497,10 +2497,6 @@
   "beartype": [
     "setuptools"
   ],
-  "beautifulsoup4": [
-    "hatchling",
-    "setuptools"
-  ],
   "beautifultable": [
     "setuptools"
   ],
