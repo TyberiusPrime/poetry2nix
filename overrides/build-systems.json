@@ -5859,9 +5859,6 @@
   "doctest-ignore-unicode": [
     "setuptools"
   ],
-  "docutils": [
-    "setuptools"
-  ],
   "docx2python": [
     "poetry-core",
     "setuptools"
