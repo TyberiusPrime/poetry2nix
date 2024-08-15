@@ -10136,28 +10136,6 @@
   "jsons": [
     "setuptools"
   ],
-  "jsonschema": [
-    {
-      "buildSystem": "setuptools",
-      "until": "4.6.0"
-    },
-    {
-      "buildSystem": "setuptools-scm",
-      "until": "4.6.0"
-    },
-    {
-      "buildSystem": "hatch-fancy-pypi-readme",
-      "from": "4.11.0"
-    },
-    {
-      "buildSystem": "hatch-vcs",
-      "from": "4.6.0"
-    },
-    {
-      "buildSystem": "hatchling",
-      "from": "4.6.0"
-    }
-  ],
   "jsonschema-3": [
     "setuptools-scm"
   ],
