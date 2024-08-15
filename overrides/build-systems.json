@@ -16067,9 +16067,6 @@
   "process-tests": [
     "setuptools"
   ],
-  "procrastinate": [
-    "poetry-core"
-  ],
   "proglog": [
     "setuptools"
   ],
