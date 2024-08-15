@@ -405,22 +405,6 @@ lib.composeManyExtensions [
         autoPatchelfIgnoreMissingDeps = true;
       });
 
-      cairocffi = prev.cairocffi.overridePythonAttrs (
-        old: {
-          buildInputs = old.buildInputs or [ ] ++ [ final.pytest-runner ];
-          # apply necessary patches in postInstall if the source is a wheel
-          postInstall = lib.optionalString (old.src.isWheel or false) ''
-            pushd "$out/${final.python.sitePackages}"
-            for patch in ${lib.concatMapStringsSep " " (p: "${p}") pkgs.python3.pkgs.cairocffi.patches}; do
-              patch -p1 < "$patch"
-            done
-            popd
-          '';
-        } // lib.optionalAttrs (!(old.src.isWheel or false)) {
-          inherit (pkgs.python3.pkgs.cairocffi) patches;
-        }
-      );
-
       cairosvg = prev.cairosvg.overridePythonAttrs (
         old: {
           buildInputs = old.buildInputs or [ ] ++ [ final.pytest-runner ];
